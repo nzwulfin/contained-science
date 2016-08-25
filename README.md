@@ -13,7 +13,8 @@ docker run pybench -c 'import numpy; numpy.show_config()'
 
 ## To add a test
 Create the new test in the python/ directory
-Add a new COPY line to the Dockerfile
+Rebuild experiments.tar:
+`tar cf experiments.tar *.py`
 Rebuild the container
 
 ## Using the R container
@@ -27,5 +28,6 @@ docker run -e RTEST=[test name] rbench
 
 ## To add a test
 Create the new test in the R/ directory
-Add a new COPY line to the Dockerfile
+Rebuild experiments.tar:
+`tar cf experiments.tar *.R`
 Rebuild the container
