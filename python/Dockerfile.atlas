@@ -1,6 +1,8 @@
 FROM rhel7
 
-RUN INSTALL_PKGS="numpy scipy blas" && yum -y install $INSTALL_PKGS
+RUN INSTALL_PKGS="numpy scipy blas" && \
+yum -y install $INSTALL_PKGS && \
+yum -y clean all
 
 ADD experiments.tar /tmp/
 

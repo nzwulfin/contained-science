@@ -5,7 +5,8 @@ RUN yum -y install http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-
 
 RUN INSTALL_PKGS="time texinfo-tex R" && \
 yum-config-manager --enable rhel-7-server-optional-rpms && \
-yum -y install $INSTALL_PKGS
+yum -y install $INSTALL_PKGS && \
+yum -y clean all
 
 RUN R -e 'install.packages("SuppDists", dependencies = TRUE, repos="http://cran.us.r-project.org")'
 
