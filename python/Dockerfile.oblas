@@ -40,7 +40,7 @@ git checkout tags/v0.15.1 && \
 python setup.py config_fc --fcompiler=gnu95 install && \
 git clean -xdf
 
-ADD experiments.tar /tmp/
+#ADD experiments.tar /tmp/
 
 # docker run <container> /tmp/benchmark
 ENTRYPOINT ["python"]
