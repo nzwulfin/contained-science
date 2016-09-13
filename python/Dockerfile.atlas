@@ -4,8 +4,6 @@ RUN INSTALL_PKGS="numpy scipy blas" && \
 yum -y install $INSTALL_PKGS && \
 yum -y clean all
 
-#ADD experiments.tar /tmp/
-
 # docker run <container> /tmp/benchmark
 ENTRYPOINT ["python"]
 CMD ["--help"]
