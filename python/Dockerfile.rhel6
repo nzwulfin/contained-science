@@ -1,3 +1,4 @@
+# docker build -t 6-atlas .
 FROM rhel6
 
 RUN INSTALL_PKGS="numpy scipy blas" && \

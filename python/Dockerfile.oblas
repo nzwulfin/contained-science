@@ -1,3 +1,4 @@
+# docker build -t oblas .
 # Derived from instructions here https://gist.github.com/lucasoldaini/2d548cafa7ea4d147aa2bb1c7cd393cc
 FROM rhel7
 
