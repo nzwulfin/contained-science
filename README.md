@@ -53,7 +53,10 @@ Build the platform container
 ```
 docker build -t oblas oblas/
 ```
-
+The OpenBLAS Dockerfile is built with `ARG` support that allows for changing the version of OpenBLAS, NumPY, or SciPY during the docker build process.  E.G, to build from the v0.2.19 tag in the OpenBLAS git repository and add a corresponding tag to the image:
+```
+docker build --build-arg OBLASVER=v0.2.19 -t oblas:0.2.19 oblas/
+```
 ### Creating the experiment container
 Edit the Dockerfile to match the tag `-t oblas` given to the platform container in the previous step
 
