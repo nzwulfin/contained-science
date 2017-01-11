@@ -43,7 +43,7 @@ docker run exp-at -c 'import numpy; numpy.show_config()'
 #### To run a benchmark script from the tarball
 ```
 docker run exp-at /tmp/[test script]
-docker run exp-at /tmp/test_scipy
+docker run exp-at /tmp/test_scipy.py
 ```
 
 ### Creating the OpenBLAS platform container
@@ -87,7 +87,7 @@ docker run exp-ob -c 'import numpy; numpy.show_config()'
 #### To run a benchmark script from the tarball
 ```
 docker run exp-at /tmp/[test script]
-docker run exp-at /tmp/test_scipy
+docker run exp-at /tmp/test_scipy.py
 ```
 
 ### Comparison of the two containers using a scipy benchmark

@@ -1,5 +1,4 @@
-# docker build -t 6-atlas-exp .
-FROM 6-atlas
+# docker build -t rhel6-exp .
+FROM rhel6-atlas
 
 ADD experiments.tar /tmp/
-
