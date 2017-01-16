@@ -5,4 +5,7 @@ FROM atlas
 #FROM oblas
 #FROM scikit
 
-ADD experiments.tar /tmp/
+ARG workdir=/tmp
+
+ADD experiments.tar $workdir
+WORKDIR $workdir
